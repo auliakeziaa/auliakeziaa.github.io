@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@parisbaguetteid | Linktree</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #1a335e;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
+
+        /* Main container */
+        .container {
+            width: 390px;
+            height: 770px;
+            background: #022663;
+            border-radius: 24px 24px 0 0;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.128);
+            overflow: hidden;
+            margin-bottom: 0;
+            gap: 12px;
+            padding-top: 12px;
+        }
+
+        /* Top bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .right-icons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .icon-circle {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.822);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-circle img {
+            width: 110%;
+            height: 110%;
+            object-fit: contain;
+        }
+
+        .icon-circle:hover {
+            background: rgb(255, 255, 255);
+            transform: scale(1.1);
+        }
+
+        /* Profile */
+        .profile {
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: transparent;
+        }
+
+        .logo img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+
+        .profile h2 {
+            font-size: 16px;
+            color: white;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .profile p {
+            font-size: 9.7px;
+            color: white;
+            font-weight: 400;
+        }
+
+        /* Links */
+        .links {
+            margin-top: 4px;
+        }
+
+        .links a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: white;
+            border: 0.7px solid rgb(255, 255, 255);
+            padding: 6.5px 15px;
+            padding-left: 4px;
+            padding-right: 14px;
+            margin: 9px 0;
+            font-size: 9.75px;
+            font-weight: 400;
+        }
+
+        .links a span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .links a i {
+            margin-left: auto;
+            opacity: 0.5;
+        }
+
+        .link-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-leftside {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            justify-content: flex-start;
+        }
+
+        .link-icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .link-leftside span {
+            text-align: left;
+        }
+
+        .links a:hover {
+            background: #1a3d73;
+        }
+
+        .links span i {
+            margin-right: 8px;
+        }
+
+        /* Bottom button */
+        .join-btn {
+            display: inline-block;
+            margin: 10px auto 0;
+            background: white;
+            color: black;
+            padding: 9.75px 12px;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 10.5px;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 0px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 6.75px;
+            color: white;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Top Icons -->
+        <div class="top-bar">
+            <div class="icon-circle">
+                <img src="assets/img/linktreeicon.png" alt="">
+            </div>
+
+            <div class="right-icons">
+                <div class="icon-circle">
+                    <img src="assets/img/notificon.png" alt="">
+                </div>
+                <div class="icon-circle">
+                    <img src="assets/img/shareicon.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+            <div class="logo">
+                <img src="assets/img/parisbaguette.webp" alt="Paris Baguette Logo">
+            </div>
+            <h2>@parisbaguetteid</h2>
+            <p>Freshly Baked Everyday</p>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+
+            <a href="https://drive.google.com/file/d/1_HBh6S_s4GvRPRkMY9WKvs-yZG3IGmVM/view">
+                <div class="link-left">
+                    <img src="assets/img/parisbaguette.webp" class="link-icon" alt="">
+                    <span>Ramadan Hampers Catalog</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a href="https://api.whatsapp.com/send/?phone=6281112535111&text&type=phone_number&app_absent=0">
+                <div class="link-leftside">
+                    <img src="assets/img/pariswhatsapp.webp" class="link-icon" alt="">
+                    <span>Paris Baguette Help Center</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1obUMGMh35J5rgGWjzgLdMjSDwodzym-U/view">
+                <div class="link-left">
+                    <img src="assets/img/parisbaguette.webp" class="link-icon" alt="">
+                    <span>Menu Dining Stores</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1QOIPogpeB4jRHyLscJJWD92RYROfn9tr/view">
+                <div class="link-left">
+                    <img src="assets/img/parisbaguette.webp" class="link-icon" alt="">
+                    <span>Menu Grab & Go Stores</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdhCDCYv6LnTO32i8nsjSPy8kM3ava12E88uJ4RamIp3oX4vA/viewform">
+                <div class="link-leftside">
+                    <img src="assets/img/parisicon.webp" class="link-icon" alt="">
+                    <span>Help Us Improve!</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a
+                href="https://www.grab.com/id/download/?is_retargeting=true&c=ID_CLUSTER-ALL_PAX_GF_SOCM_LOC__IDGFSTI000004m0_Broad_MEX-tamubistro&af_ad=Paris%20Baguette&pid=instagram-organic&af_sub5=organic&af_force_deeplink=true">
+                <div class="link-leftside">
+                    <img src="assets/img/grabfood.webp" class="link-icon" alt="">
+                    <span>GrabFood</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a href="https://gojek.link/">
+                <div class="link-leftside">
+                    <img src="assets/img/gofood.webp" class="link-icon" alt="">
+                    <span>GoFood</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+            <a
+                href="https://shopee.co.id/now-food/storeListing/106562?stm_medium=referral&stm_source=rw&uls_trackid=55b5h0p100q4">
+                <div class="link-leftside">
+                    <img src="assets/img/shopeefood.webp" class="link-icon" alt="">
+                    <span>ShopeeFood - 15% OFF!</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </a>
+
+        </div>
+
+        <!-- Bottom Button -->
+        <div class="join-btn">
+            Join parisbaguetteid on Linktree
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Cookie Preferences · Report · Privacy · Explore
+        </div>
+
+    </div>
+
+</body>
+
+</html>
